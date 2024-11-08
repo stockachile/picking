@@ -1,0 +1,148 @@
+/* Fondo general de la página */
+body {
+    background-color: #e8e8e8; /* Fondo claro */
+    color: #000000; /* Texto negro para contraste */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #5e17eb; /* Fondo morado para botones */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #05fa93; /* Fondo verde claro al pasar el mouse */
+    color: #000000; /* Texto negro al pasar el mouse */
+}
+
+/* Estilo para el campo de entrada */
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 2px solid #5e17eb; /* Borde morado */
+    border-radius: 5px;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+}
+
+/* Estilo para el contenedor de pedidos */
+#ordersContainer {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #5e17eb; /* Borde morado */
+    background-color: #ffffff; /* Fondo blanco para contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el encabezado de los pedidos */
+.order h3 {
+    color: #5e17eb; /* Título morado */
+}
+
+/* Estilo para el resumen de escaneos */
+.scan-summary {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000; /* Texto negro */
+}
+
+/* Estilo para los productos pendientes de escanear */
+.pending-products {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.pending-products h4 {
+    color: #5e17eb; /* Título en morado */
+}
+
+.pending-products ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pending-products li {
+    color: #000000; /* Texto negro para la lista */
+}
+
+/* Estilo para la lista de productos escaneados */
+.scanned-list {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.scanned-item {
+    color: #000000; /* Texto negro */
+    margin-bottom: 5px;
+}
+
+.scanned-item button {
+    background-color: #5e17eb; /* Fondo morado */
+    color: #ffffff; /* Texto blanco */
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.scanned-item button:hover {
+    background-color: #05fa93; /* Fondo verde claro al pasar el mouse */
+}
+
+/* Estilo para los botones de navegación */
+#navButtons button {
+    background-color: #5e17eb; /* Fondo morado */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#navButtons button:hover {
+    background-color: #05fa93; /* Fondo verde claro al pasar el mouse */
+}
+
+#navButtons button:disabled {
+    background-color: #777777; /* Color gris si el botón está deshabilitado */
+    cursor: not-allowed;
+}
+
+/* Estilo para el texto del encabezado de la página */
+#header {
+    background-color: #5e17eb; /* Fondo morado */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.download-btn {
+    background-color: #5e17eb; /* Morado */
+    color: #ffffff; /* Blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.download-btn:hover {
+    background-color: #05fa93; /* Verde claro al pasar el mouse */
+}

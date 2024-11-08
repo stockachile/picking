@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicación de Pickeo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pickeo de Pedidos</h1>
+    <div id="headerSummary">
+      <p>Total de Pedidos: <span id="totalOrders">0</span></p>
+      <p>Pedidos Completados: <span id="completedOrders">0</span></p>
+    </div>
+  </header>
+
+  <div>
+    <!-- Campo de entrada para pegar los datos -->
+    <textarea id="dataInput" rows="4" cols="50" placeholder="Pega los datos aquí..."></textarea>
+
+    <!-- Botón para procesar los datos -->
+    <button onclick="handleDataProcessing()">Procesar Datos</button>
+
+    <!-- Botón para limpiar los datos -->
+    <button onclick="clearDataInput()">Limpiar Datos</button>
+
+    <div id="ordersContainer"></div>
+  </div>
+
+  <div id="navButtons">
+    <button onclick="navigateOrder(-1)">Anterior</button>
+    <button onclick="navigateOrder(1)">Siguiente</button>
+  </div>
+
+  <!-- Contenedor para pedidos pendientes -->
+  <div id="pendingOrdersContainer" style="margin-top: 40px;">
+    <h3>Pedidos Pendientes</h3>
+    <ul id="pendingOrdersList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+  <div id="downloadContainer"></div>
+
+</body>
+
+</html>
